@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_hello.dart
+ASSET_PREFIX=hello
+BUNDLE_NAME=Hello App
+BUNDLE_DISPLAY_NAME=Hello App

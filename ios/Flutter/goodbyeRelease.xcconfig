@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_goodbye.dart
+ASSET_PREFIX=goodbye
+BUNDLE_NAME=Goodbye App
+BUNDLE_DISPLAY_NAME=Goodbye App

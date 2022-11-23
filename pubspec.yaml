@@ -43,13 +43,33 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  flutter_flavorizr: 2.1.5
   flutter_lints: 2.0.1
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+  flavors:
+    hello:
+      app:
+        name: "Hello App"
+
+      android:
+        applicationId: "com.example.hello"
+
+      ios:
+        bundleId: "com.example.hello"
+
+    goodbye:
+      app:
+        name: "Goodbye App"
+
+      android:
+        applicationId: "com.example.goodbye"
+      ios:
+        bundleId: "com.example.goodbye"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
