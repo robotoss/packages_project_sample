@@ -1,7 +1,4 @@
 library network_manager;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/models/character.dart';
+export 'src/network_manager.dart';
