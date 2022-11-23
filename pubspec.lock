@@ -88,6 +88,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  goodbye:
+    dependency: "direct main"
+    description:
+      path: "features/goodbye"
+      relative: true
+    source: path
+    version: "0.0.1"
   hello:
     dependency: "direct main"
     description:

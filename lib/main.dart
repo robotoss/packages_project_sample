@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello/hello.dart';
+import 'package:goodbye/goodbye.dart';
 import 'package:network_manager/network_manager.dart';
 import 'package:provider/provider.dart';
 
@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const CharactersPage(),
+      // home: const CharactersPage(),
+      home: const LocationsPage(),
     );
   }
 }

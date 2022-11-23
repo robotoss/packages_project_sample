@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-LocationsRequestModel characterModelFromJson(String str) =>
+LocationsRequestModel locationsModelFromJson(String str) =>
     LocationsRequestModel.fromJson(json.decode(str));
 
 class LocationsRequestModel {
@@ -9,19 +9,19 @@ class LocationsRequestModel {
     required this.results,
   });
 
-  final Info info;
+  final InfoLocations info;
   final List<LocationData> results;
 
   factory LocationsRequestModel.fromJson(Map<String, dynamic> json) =>
       LocationsRequestModel(
-        info: Info.fromJson(json["info"]),
+        info: InfoLocations.fromJson(json["info"]),
         results: List<LocationData>.from(
             json["results"].map((x) => LocationData.fromJson(x))),
       );
 }
 
-class Info {
-  Info({
+class InfoLocations {
+  InfoLocations({
     required this.count,
     required this.pages,
     required this.next,
@@ -30,10 +30,10 @@ class Info {
 
   final int count;
   final int pages;
-  final String next;
+  final String? next;
   final String? prev;
 
-  factory Info.fromJson(Map<String, dynamic> json) => Info(
+  factory InfoLocations.fromJson(Map<String, dynamic> json) => InfoLocations(
         count: json["count"],
         pages: json["pages"],
         next: json["next"],

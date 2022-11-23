@@ -65,7 +65,7 @@ class NetworkManagerImp extends NetworkManager {
           LocationsRequestModel.fromJson(response.data).results;
       locations.addAll(responseChars);
       page++;
-      return page != 30;
+      return page != 2;
     });
 
     return locations;

@@ -37,6 +37,8 @@ dependencies:
     path: ./core/network_manager
   hello:
     path: ./features/hello
+  goodbye:
+    path: ./features/goodbye
 
 dev_dependencies:
   flutter_test:
